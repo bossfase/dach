@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(strip_tags(trim($_POST['email'])));
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])));
     
-    $to = "momo.bossfade@gmail.com"; // Deine E-Mail-Adresse
+    $to = "dachbauschuller@gmail.com"; // Deine E-Mail-Adresse
     $subject = "Neue Nachricht von Kontaktformular";
     $body = "Name: $name\nE-Mail: $email\n\nNachricht:\n$message";
     $headers = "From: $email\r\n" .
