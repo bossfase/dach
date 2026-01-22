@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleKontakt.css"> <!-- Dein Stylesheet -->
-    <title>Kontakt - Boss Fade</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Dach & Bau Schuller</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-     <header>
-        <img src="logoo.png" alt="Logo" class="main-logo"> <!-- Bild als Logo -->
-    </header>
+<header class="hero_gal">
+  <nav class="nav">
+    <div class="logo">
+     
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
 
-    <main>
-       <section>
-    <h2>Kontakt</h2>
-    <form action="https://formspree.io/f/xeoqepnn" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+<!-- KONTAKT -->
+<section class="section contact-page">
+  <h2 class="kontakt">Kontakt aufnehmen</h2>
+  <form class="contact-form"
+        action="https://formspree.io/f/xeoqepnn"
+        method="POST">
 
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" name="email" required>
 
-        <button type="submit">Nachricht senden</button>
-    </form>
+    <label for="message">Nachricht</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Nachricht senden</button>
+  </form>
+
+  
+  <section class="section contact" id="kontakt">
+
+  <div class="contact-info">
+    <p>📍 Madamenweg 94, 38120 Braunschweig</p>
+    <p>📞 0531 37957766</p>
+    <p>📱 0157 63370746</p>
+    <p>✉️ dachbauschuller@gmail.com</p>
+  </div>
+</section>
 </section>
 
+<footer class="site-footer">
+    <p>&copy; 2026 Dach & Bau Schuller Alle Rechte vorbehalten.</p>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+</footer>
 
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Boss Fade. Alle Rechte vorbehalten.</p>
-        <a href="impressum.html" style="color: darksalmon;">Impressum</a>
-    </footer>
 
 </body>
 </html>
+
