@@ -20,10 +20,10 @@ body {
 
 .logo
 {
- background: url("logo2.png") center/cover no-repeat;
+ background: url("images/logo2.png") center/cover no-repeat;
  width:300px;
  height:160px;
- margin-top: 50px;
+ margin-top: 75px;
 }
 
 
@@ -41,9 +41,17 @@ body {
 
 /* HERO */
 .hero {
-  background: url("img1.png") center/cover no-repeat;
+  background: url("images/img1.png") center/cover no-repeat;
   color: white;
-  height: 90vh;
+  height: 100vh;
+}
+
+/* HERO */
+.hero_gal {
+  background: url("images/img1.png") center/cover no-repeat;
+  color: white;
+  height: 50vh;
+
 }
 
 .hero-content {
@@ -52,7 +60,6 @@ body {
 }
 
 .hero h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -86,7 +93,7 @@ body {
 }
 
 .info{
-  font-family: "Poppins", sans-serif;
+  font-weight: 100;
   padding-right: 250px;
   padding-left: 250px;
   padding-bottom: 50px;
@@ -111,6 +118,13 @@ body {
   list-style: none;
 }
 
+.logo_gal {
+ background: url("images/logo2.png") center/cover no-repeat;
+ width:300px;
+ height:160px;
+ margin-top: 50px;
+}
+
 .services li {
   margin-bottom: 10px;
   padding-left: 20px;
@@ -120,7 +134,7 @@ body {
 .leistung{
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  background: url("leistung.png") center/cover no-repeat;
+  background: url("images/leistung.png") center/cover no-repeat;
   text-align: center;
   align-content: center;
 }
@@ -129,7 +143,6 @@ body {
   background-color: rgb(247, 247, 247);
   padding-top: 15px;
   padding-bottom: 10px;
-
   padding-left: 65px;
   text-align: left;
   width: 400px;
@@ -173,10 +186,26 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav a {
+  color: #0e0e0e;
+}
+
+
+  .hero_gal {
+  background: url("images/img2.png") center/cover no-repeat;
+  color: rgb(2, 2, 2);
+  height: 50vh;
+}
+
   .logo{
-    background: url("logoHandy.png") center/cover no-repeat;
+    background: url("images/logoHandy.png") center/cover no-repeat;
     width: 120px;
     height: 80px;
+    margin-top: 5px;
   }
 
   .info{
@@ -190,7 +219,7 @@ body {
   .leistung{
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  background: url("leistung.png") center/cover no-repeat;
+  background: url("images/leistung.png") center/cover no-repeat;
   text-align: center;
   align-content: center;
 }
@@ -204,6 +233,10 @@ body {
   width: 300px;
   position: relative;
   margin: auto;
+}
+
+.hero {
+  background: url("images/img1.png") center/cover no-repeat;
 }
 
   .nav {
@@ -223,3 +256,43 @@ body {
     padding: 60px 30px;
   }
 }
+
+/* ACTIVE MENU */
+.nav a.active {
+  font-weight: 600;
+  border-bottom: 2px solid #a85a2a;
+}
+
+/* GALERIE NUR BILDER */
+.gallery-only {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 220px;
+  }
+
+}
+
