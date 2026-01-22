@@ -1,4 +1,7 @@
- * {
+/* =====================
+   RESET & BASIS
+===================== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,22 +13,40 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+.impressum-container {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.impressum-container h2{
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+
+}
+.impressum-container p {  
+  display: block;
+  margin: 0;
+  padding: 0;
+
+}
+
+.impressum-container h2 {
+  margin-bottom: 5px; /* Abstand zwischen Überschrift und Text */
+}
+
+
+/* =====================
+   NAVIGATION
+===================== */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
 }
-
-.logo
-{
- background: url("logo2.png") center/cover no-repeat;
- width:300px;
- height:160px;
- margin-top: 75px;
-}
-
 
 .nav ul {
   display: flex;
@@ -39,19 +60,32 @@ body {
   font-weight: 500;
 }
 
-/* HERO */
+.nav a.active {
+  font-weight: 600;
+  border-bottom: 2px solid #a85a2a;
+}
+
+.logo {
+  background: url("images/logo2.png") center/cover no-repeat;
+  width: 300px;
+  height: 160px;
+  margin-top: 75px;
+}
+
+
+
+/* =====================
+   HERO
+===================== */
 .hero {
-  background: url("img1.png") center/cover no-repeat;
+  background: url("images/img1.png") center/cover no-repeat;
   color: white;
   height: 100vh;
 }
 
-/* HERO */
 .hero_gal {
-  background: url("img1.png") center/cover no-repeat;
-  color: white;
+  background: url("images/img1.png") center/cover no-repeat;
   height: 50vh;
-
 }
 
 .hero-content {
@@ -69,7 +103,9 @@ body {
   font-size: 1.1rem;
 }
 
-/* BUTTONS */
+/* =====================
+   BUTTONS
+===================== */
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -85,27 +121,14 @@ body {
   color: #a85a2a;
 }
 
-/* SECTIONS */
+/* =====================
+   SECTIONS ALLGEMEIN
+===================== */
 .section {
   padding: 80px 60px;
   max-width: 1100px;
   margin: auto;
 }
-
-.info{
-  font-weight: 100;
-  padding-right: 250px;
-  padding-left: 250px;
-  padding-bottom: 50px;
-  margin-top: 50px;
-}
-
-.info h2{
-  color: #a85a2a;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 
 .section h2 {
   font-family: "Poppins", sans-serif;
@@ -113,16 +136,25 @@ body {
   margin-bottom: 20px;
 }
 
-/* SERVICES */
-.services ul {
-  list-style: none;
+/* =====================
+   INFO / TEXTBLOCK
+===================== */
+.info {
+  font-weight: 100;
+  padding: 0 250px 50px;
+  margin-top: 50px;
 }
 
-.logo_gal {
- background: url("logo2.png") center/cover no-repeat;
- width:300px;
- height:160px;
- margin-top: 50px;
+.info h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* =====================
+   LEISTUNGEN
+===================== */
+.services ul {
+  list-style: none;
 }
 
 .services li {
@@ -131,34 +163,31 @@ body {
   position: relative;
 }
 
-.leistung{
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  background: url("leistung.png") center/cover no-repeat;
-  text-align: center;
-  align-content: center;
-}
-
-.leistung_liste{
-  background-color: rgb(247, 247, 247);
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 65px;
-  text-align: left;
-  width: 400px;
-  position: relative;
-  margin: 0 auto 10px auto;
-}
-
 .services li::before {
   content: "✔";
   position: absolute;
   left: 0;
-  margin-right: 10px;
   color: rgb(7, 165, 7);
 }
 
-/* GALLERY */
+.leistung {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  background: url("images/leistung.png") center/cover no-repeat;
+  text-align: center;
+}
+
+.leistung_liste {
+  background-color: rgb(247, 247, 247);
+  padding: 15px 0 10px 65px;
+  text-align: left;
+  width: 400px;
+  margin: 0 auto 10px;
+}
+
+/* =====================
+   GALLERY (HOMEPAGE)
+===================== */
 .gallery .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -171,99 +200,9 @@ body {
   object-fit: cover;
 }
 
-/* CONTACT */
-.contact-info {
-  margin: 20px 0;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 0.9rem;
-  background: #f5f5f5;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .nav a {
-  color: #0e0e0e;
-}
-
-
-  .hero_gal {
-  background: url("img2.png") center/cover no-repeat;
-  color: rgb(2, 2, 2);
-  height: 50vh;
-}
-
-  .logo{
-    background: url("logoHandy.png") center/cover no-repeat;
-    width: 120px;
-    height: 80px;
-    margin-top: 5px;
-  }
-
-  .info{
-    padding-right: 30px;
-    padding-left: 30px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-
-  .leistung{
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  background: url("leistung.png") center/cover no-repeat;
-  text-align: center;
-  align-content: center;
-}
-
-.leistung_liste{
-  background-color: rgb(247, 247, 247);
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 35px;
-  text-align: left;
-  width: 300px;
-  position: relative;
-  margin: auto;
-}
-
-.hero {
-  background: url("img1.png") center/cover no-repeat;
-}
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero-content {
-    padding: 200px 30px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .section {
-    padding: 60px 30px;
-  }
-}
-
-/* ACTIVE MENU */
-.nav a.active {
-  font-weight: 600;
-  border-bottom: 2px solid #a85a2a;
-}
-
-/* GALERIE NUR BILDER */
+/* =====================
+   GALERIE – NUR BILDER
+===================== */
 .gallery-only {
   max-width: 1200px;
   margin: 80px auto;
@@ -284,6 +223,148 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
+/* =====================
+   CONTACT (UNVERÄNDERT)
+===================== */
+.contact-page {
+  max-width: 700px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contact-page h2 {
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #a85a2a;
+}
+
+.contact-info {
+  margin: 10px 0;
+  text-align: left; /* exakt wie vorher */
+  font-size: 20px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  background: #f5f5f5;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: #f8f8f8;
+    flex-wrap: wrap; /* damit es bei kleiner Breite umbrechen kann */
+}
+
+.site-footer p,
+.site-footer a {
+  font-size: 0.8rem;
+  text-align: center;
+    margin: 0;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+.site-footer a {
+  color: rgb(151, 91, 70);
+}
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+
+  .nav a {
+    color: #0e0e0e;
+  }
+
+  .logo {
+    background: url("images/logoHandy.png") center/cover no-repeat;
+    width: 120px;
+    height: 80px;
+    margin-top: 5px;
+  }
+
+  .hero {
+    background: url("images/img1.png") center/cover no-repeat;
+  }
+
+  .hero_gal {
+    background: url("images/img2.png") center/cover no-repeat;
+    height: 50vh;
+  }
+
+  .hero-content {
+    padding: 200px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 60px 30px;
+  }
+
+  .info {
+    padding: 0 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .leistung_liste {
+    padding-left: 35px;
+    width: 300px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-page {
+    margin-top: 250px;
+  }
+}
 
 @media (max-width: 600px) {
   .gallery-grid {
@@ -294,5 +375,8 @@ body {
     height: 220px;
   }
 
+  .contact-page {
+    padding: 0 10px;
+  }
 }
 
