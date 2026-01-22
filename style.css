@@ -66,7 +66,7 @@ body {
 }
 
 .logo {
-  background: url("images/logo2.png") center/cover no-repeat;
+  background: url("logo2.png") center/cover no-repeat;
   width: 300px;
   height: 160px;
   margin-top: 75px;
@@ -78,13 +78,13 @@ body {
    HERO
 ===================== */
 .hero {
-  background: url("images/img1.png") center/cover no-repeat;
+  background: url("img1.png") center/cover no-repeat;
   color: white;
   height: 100vh;
 }
 
 .hero_gal {
-  background: url("images/img1.png") center/cover no-repeat;
+  background: url("img1.png") center/cover no-repeat;
   height: 50vh;
 }
 
@@ -173,7 +173,7 @@ body {
 .leistung {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  background: url("images/leistung.png") center/cover no-repeat;
+  background: url("leistung.png") center/cover no-repeat;
   text-align: center;
 }
 
@@ -318,18 +318,18 @@ body {
   }
 
   .logo {
-    background: url("images/logoHandy.png") center/cover no-repeat;
+    background: url("logoHandy.png") center/cover no-repeat;
     width: 120px;
     height: 80px;
     margin-top: 5px;
   }
 
   .hero {
-    background: url("images/img1.png") center/cover no-repeat;
+    background: url("img1.png") center/cover no-repeat;
   }
 
   .hero_gal {
-    background: url("images/img2.png") center/cover no-repeat;
+    background: url("img2.png") center/cover no-repeat;
     height: 50vh;
   }
 
