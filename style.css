@@ -45,7 +45,7 @@ body {
   margin-bottom: 5px; /* Abstand zwischen Überschrift und Text */
 }
 
-p , a , li {
+p , a , li , input, label {
    font-family: "Josefin Sans", sans-serif;
    font-weight: 300;
 }
