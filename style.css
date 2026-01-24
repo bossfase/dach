@@ -6,54 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.caudex-regular {
-  font-family: "Caudex", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.caudex-bold {
-  font-family: "Caudex", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.caudex-regular-italic {
-  font-family: "Caudex", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.caudex-bold-italic {
-  font-family: "Caudex", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 
 
 .josefin-sans-<uniquifier> {
@@ -93,19 +45,9 @@ body {
   margin-bottom: 5px; /* Abstand zwischen Überschrift und Text */
 }
 
-p {
-   font-family: "Caudex", serif;
+p , a , li {
+   font-family: "Josefin Sans", sans-serif;
    font-weight: 500;
-}
-
-a {
-   font-family: "Josefin Sans", sans-serif;
-   font-weight: 300;
-}
-
-li {
-   font-family: "Josefin Sans", sans-serif;
-   font-weight: 300;
 }
 
 
