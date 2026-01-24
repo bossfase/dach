@@ -46,6 +46,16 @@ body {
 
 p {
    font-family: "Josefin Sans", sans-serif;
+   font-weight: 500;
+}
+
+a {
+   font-family: "Josefin Sans", sans-serif;
+   font-weight: 300;
+}
+
+li {
+   font-family: "Josefin Sans", sans-serif;
    font-weight: 300;
 }
 
